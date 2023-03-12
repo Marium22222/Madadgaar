@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04BFBDA2-2A6A-4B19-B4B3-F948A934FE36}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OOP_PROJECT</RootNamespace>
+    <AssemblyName>OOP PROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.1.9, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.9\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminform.Designer.cs">
+      <DependentUpon>adminform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admintime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admintime.Designer.cs">
+      <DependentUpon>admintime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chef form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chef form.Designer.cs">
+      <DependentUpon>chef form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chef gif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chef gif.Designer.cs">
+      <DependentUpon>chef gif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conpr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conpr.Designer.cs">
+      <DependentUpon>conpr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="evapor prac.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="evapor prac.Designer.cs">
+      <DependentUpon>evapor prac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="living pr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="living pr.Designer.cs">
+      <DependentUpon>living pr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maths practice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="maths practice.Designer.cs">
+      <DependentUpon>maths practice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="non live pr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="non live pr.Designer.cs">
+      <DependentUpon>non live pr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odd practice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="odd practice.Designer.cs">
+      <DependentUpon>odd practice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prime practice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="prime practice.Designer.cs">
+      <DependentUpon>prime practice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="queryconnection.cs" />
+    <Compile Include="services.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="services.Designer.cs">
+      <DependentUpon>services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tailorform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tailorform.Designer.cs">
+      <DependentUpon>tailorform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tutorform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tutorform.Designer.cs">
+      <DependentUpon>tutorform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vocabpr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vocabpr.Designer.cs">
+      <DependentUpon>vocabpr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vowpr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vowpr.Designer.cs">
+      <DependentUpon>vowpr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="welcome tutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome tutor.Designer.cs">
+      <DependentUpon>welcome tutor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminform.resx">
+      <DependentUpon>adminform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admintime.resx">
+      <DependentUpon>admintime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef form.resx">
+      <DependentUpon>chef form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef gif.resx">
+      <DependentUpon>chef gif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conpr.resx">
+      <DependentUpon>conpr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="evapor prac.resx">
+      <DependentUpon>evapor prac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="living pr.resx">
+      <DependentUpon>living pr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maths practice.resx">
+      <DependentUpon>maths practice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="non live pr.resx">
+      <DependentUpon>non live pr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odd practice.resx">
+      <DependentUpon>odd practice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prime practice.resx">
+      <DependentUpon>prime practice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="services.resx">
+      <DependentUpon>services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tailorform.resx">
+      <DependentUpon>tailorform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tutorform.resx">
+      <DependentUpon>tutorform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vocabpr.resx">
+      <DependentUpon>vocabpr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vowpr.resx">
+      <DependentUpon>vowpr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome tutor.resx">
+      <DependentUpon>welcome tutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unique image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-07-25 at 00.39.34 %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foan.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow light.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="usercontrols\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FfG5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FfG51.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maths.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\even numbers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcomeanimation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chef form.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\madadimag.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new help.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
